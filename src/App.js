@@ -15,6 +15,7 @@ const movie1 = {
   Poster: 'https://m.media-amazon.com/images/M/MV5BYjFhN2RjZT…TkyMmY3XkEyXkFqcGdeQXVyNTA0OTU0OTQ@._V1_SX300.jpg'
 }
 function App() {
+  const [movies, setMovies] = useState();
   const searchMovies = async (title) => {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
@@ -22,7 +23,7 @@ function App() {
     console.log(data);
   }
   useEffect(() => {
-    searchMovies('Spiderman')
+    searchMovies()
   }, [])
 
   return(
@@ -31,7 +32,7 @@ function App() {
       <div className='search' >
         <input 
           placeholder='search for movies' 
-          value="Superman"
+          value="Spiderman"
           onChange={() => {}}
         />
         <img src={SearchIcon}
