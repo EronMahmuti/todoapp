@@ -19,7 +19,6 @@ body {
 
 .app {
   padding: 4rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,13 +36,12 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: fit-content;
+  margin: 3rem;
 }
 
 .search {
-  width: 71%;
-  margin: 4rem 0 2rem;
-
+  width: 51%;
+  margin: 4rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
