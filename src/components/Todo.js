@@ -14,7 +14,7 @@ function Todo({todos,completeTodo}) {
             <div key={todo.id} onClick={() => completeTodo(todo.id)}>
                 {todo.text}    
             </div>
-            <div className='icons' >
+            <div className='icons'>
                 <RiCloseCircleLine />
                 <TiEdit />
             </div>
