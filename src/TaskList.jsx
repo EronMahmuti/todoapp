@@ -1,12 +1,13 @@
 import { useState, useContext } from 'react';
 import { useTasks, useTasksDispatch } from './TasksContext';
+import "./App.css"
 
 export default function TaskList(){
     const tasks = useTasks();
     return(
         <ul>
             {tasks.map(task => (
-                <li key={task.id}>
+                <li className='todoList' key={task.id}>
                     <Task task={task} />
                     </li>
             ))}
@@ -33,14 +34,14 @@ function Task({ task }){
                         });
                     }}
                 />
-                <button onClick={() => setIsEditing(false)}>Save</button>
+                <button className='btns'  onClick={() => setIsEditing(false)}>Save</button>
             </>
         )
     }else{
         taskContent = (
             <>
                 {task.text}
-                <button onClick={() => setIsEditing(true)}> Edit </button>
+                <button className='btns' onClick={() => setIsEditing(true)}> Edit </button>
             </>
         )
     }
@@ -48,7 +49,7 @@ function Task({ task }){
         <label>
             
             {taskContent}
-            <button onClick={() => {
+            <button className='btns' onClick={() => {
                 dispatch({
                     type: 'deleted',
                     id: task.id

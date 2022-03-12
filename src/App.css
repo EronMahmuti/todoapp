@@ -145,3 +145,24 @@ h1 {
 .edit-icon {
   color: #fff;
 }
+
+.todoList{
+  margin: 1rem;
+  padding: 1rem;
+  background: #149fff;
+  list-style: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns{
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #161a2b;
+  font-family: "Trebuchet MS";
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e2e2e2;
+}
