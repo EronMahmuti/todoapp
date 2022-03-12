@@ -9,9 +9,9 @@ import TaskList from './TaskList';
 function App() {
   
   return(
-    <div>
+    <div className='wrapper' >
       <TasksProvider>
-        <h1>Today you are going to do</h1>
+        <h1>Todo list</h1>
         <AddTask />
         <TaskList />
       </TasksProvider>
