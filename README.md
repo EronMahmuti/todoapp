@@ -61,4 +61,4 @@ Start the server
   npm run start
 ```
 
-![Screenshot](todoList.png)
+![Screenshot](./src/todoList.png)
