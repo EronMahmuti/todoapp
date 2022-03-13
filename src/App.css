@@ -8,7 +8,8 @@
 
 body {
   background: rgb(2,0,36);
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background-color: #7cffcb;
+  background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +23,7 @@ body {
   align-items: center;
   flex-direction: column;
   background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  box-shadow: 0 8px 32px 0 #1f26875e;
   backdrop-filter: blur( 4px );
   
   -webkit-backdrop-filter: blur( 4px );
@@ -97,6 +98,12 @@ ul{
   justify-content: space-between;
 }
 
+h1{
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px solid #392B69;
+}
+
 .task-text{
   font-family: "Trebuchet MS";
   font-size: 1rem;
@@ -107,5 +114,4 @@ ul{
   justify-content: space-between;
   align-items: center;
   width: 22rem;
-  color: #fff;
 }
