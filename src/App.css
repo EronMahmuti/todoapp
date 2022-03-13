@@ -8,8 +8,10 @@
 
 body {
   background: rgb(2,0,36);
-  background-color: #7cffcb;
-  background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+  background-image: url("./todobg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,12 +26,10 @@ body {
   flex-direction: column;
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 8px 32px 0 #1f26875e;
-  backdrop-filter: blur( 4px );
-  
+  backdrop-filter: blur( 11px );  
   -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  border-radius: 8px;
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 16px;
 }
 
 .inputDiv{
@@ -48,6 +48,10 @@ input{
   border-radius: 8px;
   margin: 0;
   width: 100%;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+  font-family: "Trebuchet MS";
 }
 ul{
   display: flex;
@@ -56,9 +60,9 @@ ul{
 .todoList{
   width: 30rem;
   margin: 1rem;
-  padding: 1rem;
+  padding: 0.3rem 1rem;
   list-style: none;
-  border-radius: 8px;
+  border-radius: 16px;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -66,7 +70,7 @@ ul{
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 20px );
   -webkit-backdrop-filter: blur( 20px );
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 
@@ -90,6 +94,9 @@ ul{
   justify-content: space-between;
   align-items: center;
   width: 22rem;
+  color: #333;
+  font-weight: 600;
+  font-family: "Trebuchet MS";
 }
 
 .todo-label{
@@ -99,9 +106,11 @@ ul{
 }
 
 h1{
-  color: #fff;
+  color: #1899D6;
   text-transform: uppercase;
+  font-size: 3rem;
   border-bottom: 3px solid #392B69;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .task-text{
@@ -114,4 +123,71 @@ h1{
   justify-content: space-between;
   align-items: center;
   width: 22rem;
+}
+
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CSS */
+.button-19 {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  outline: none;
+  overflow: visible;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
 }

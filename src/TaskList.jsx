@@ -32,7 +32,15 @@ function Task({ task }) {
               }
             });
           }} />
-        <button className='btns' onClick={() => setIsEditing(false)}>
+        <button className='button-19' onClick={() => 
+          {
+            if(task.text == ""){
+              setIsEditing(true)
+            }else{
+              setIsEditing(false)
+            }
+          }
+        }>
           Save
         </button>
       </>
@@ -41,7 +49,7 @@ function Task({ task }) {
     taskContent = (
       <>
         {task.text}
-        <button className='btns' onClick={() => setIsEditing(true)}>
+        <button className='button-19' onClick={() => setIsEditing(true)}>
           Edit
         </button>
       </>
@@ -52,7 +60,7 @@ function Task({ task }) {
       <div className='tasksDiv' >
         {taskContent}
       </div>
-      <button className='btns' onClick={() => {
+      <button className='button-19' onClick={() => {
         dispatch({
           type: 'deleted',
           id: task.id

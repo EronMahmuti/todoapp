@@ -12,13 +12,17 @@ export default function AddTask({ onAddTask }){
                 value={text}
                 onChange={e => setText(e.target.value)}
             />
-            <button className='btns'  onClick={() => {
-                setText('');
-                dispatch({
-                    type: 'added',
-                    id: nextId++,
-                    text:text
-                });
+            <button className='button-19'  onClick={() => {
+                if(text == ""){
+                    console.log("type something");
+                }else{
+                    setText('');
+                    dispatch({
+                        type: 'added',
+                        id: nextId++,
+                        text:text
+                    });
+                }               
             }} >
                 Add
             </button>
