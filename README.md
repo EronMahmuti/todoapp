@@ -9,7 +9,6 @@ This is a simple todo app built with React.js and Css.
 - [@EronMahmuti](https://www.github.com/eronmahmuti)
 
 
-![Logo](https://eronmahmuti.me/static/media/EM-header.b247cd70d74275a3f84e.png)
 ## Color Reference
 
 | Color             | Hex                                                                |
